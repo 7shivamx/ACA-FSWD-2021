@@ -1,28 +1,49 @@
 <!DOCTYPE html>
 <head>
-    <title>Assgnment 3.0</title>
+    <title>Assignment 3.0</title>
+    <style>
+    body {
+  font: 13px/20px "MONTSERRAT", Tahoma, Verdana, sans-serif;
+  color: #404040;
+  background: #262832;
+}
+div {
+  position: relative;
+  margin: 30px auto;
+  padding: 20px 20px 20px;
+  width: 310px;
+  background: white;
+  border-radius: 3px;
+}
+    </style>
 </head>
 <body>
-    Get Token Number
-    <button onclick = "generatetoken()">Generate Token Number</button><br>
-    <p id = "tokenprint"></p>
-    <br>
-    <form>
-        <label for = "username">Username :</label>
-        <input type = "text" id = "username" placeholder = "Your Username"><br><br>
-        <label for = "data">Data :</label>
-        <input type = "text" id = "data" placeholder = "Your Data"><br><br>
-        <label for = "token_no">Token No :</label>
-        <input type = "text" id = "token_no" placeholder = "Your Token Number"><br><br>
+    <div>Get Token Number &ensp;
+    <button onclick = "generatetoken()" style="background-color:green;color:white;width:150px;height:25px;">Generate Token</button><br>
+    <b><p id = "tokenprint"></p></b>
+    </div>
+    <div><form>
+        <label for = "username" style="margin: 5px 10px 5px 0;">Username :</label>
+        <input type = "text" id = "username" placeholder = "Your Username" style="vertical-align: middle;margin: 5px 10px 5px 0;
+  padding: 10px;background-color: #fff;border: 1px solid #ddd;"><br><br>
+        <label for = "data" style="margin: 5px 10px 5px 0;">Data :</label>
+        <input type = "text" id = "data" placeholder = "Your Data" style="vertical-align: middle;margin: 5px 10px 5px 0;
+  padding: 10px;background-color: #fff;border: 1px solid #ddd;"><br><br>
+        <label for = "token_no" style="margin: 5px 10px 5px 0;">Token No :</label>
+        <input type = "text" id = "token_no" placeholder = "Your Token Number" style="vertical-align: middle;margin: 5px 10px 5px 0;
+  padding: 10px;background-color: #fff;border: 1px solid #ddd;"><br><br>
         </form>
-    <button onclick = "Register()">Register</button><br>
+    <button onclick = "Register()" style="background-color:green;color:white;width:100px;height:25px;">Register</button><br>
     <p id = "status"></p>
-        <br>
+        <br></div>
+   <div>    
     <form>
-        <label for = "token_num">Token No:</label>
-        <input type = "text" id = "token_num" placeholder = "Enter Token Number"><br>
-    </form>
-    <button onclick = "Search()">Search</button><br>
-    <p id = "user_data"></p>
+        <label for = "token_num" style="margin: 5px 10px 5px 0;">Token No:</label>
+        <input type = "text" id = "token_num" placeholder = "Enter Token Number" style="vertical-align: middle;margin: 5px 10px 5px 0;
+  padding: 10px;background-color: #fff;border: 1px solid #ddd;">
+    </form><br>
+    <button onclick = "Search()" style="background-color:green;color:white;width:100px;height:25px;">Search</button><br>
+    <b><p id = "user_data"></p></b> 
+   </div>
     <script src = "script.js"></script>
 </body>
